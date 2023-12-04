@@ -1,5 +1,8 @@
 # 💉 Testes de API Karate
-
+***Alunos:
+- Laura Pivoto Ambrósio
+- Francisco P. Guimarães
+- Pedro P. Guimarães
 ## 🛜 API pokeapi.co
 **Caso de teste 1: Listando todos os usuarios**
   - Verifica se o status da requisição foi um sucesso.
