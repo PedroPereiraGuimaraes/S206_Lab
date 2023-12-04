@@ -2,6 +2,8 @@ Feature: Testando API Pokemon.
 
 Background: Executa antes de cada teste
     * def url_base = 'https://pokeapi.co/api/v2/'
+    * def url_base2 = 'https://gorest.co.in/public/v2'
+    * def token = 'a3412e6870de8c1a9728c5845a2becb0e7e7e2378be407a3347db22cde1c4c11'
 
 Scenario: Testando retorno pokemon/bulbasaur
         Given url url_base
