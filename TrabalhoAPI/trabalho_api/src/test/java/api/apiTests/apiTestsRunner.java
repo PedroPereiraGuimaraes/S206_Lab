@@ -2,11 +2,11 @@ package api.get;
 
 import com.intuit.karate.junit5.Karate;
 
-class GetRunner{
+class apiTestsRunner{
     
     @Karate.Test
     Karate testUsers() {
-        return Karate.run("get").relativeTo(getClass());
+        return Karate.run("apiTests").relativeTo(getClass());
     }    
 
 }
