@@ -2,11 +2,6 @@ Feature: TESTS API REQRES GET METHODS
 
 Background:
   * url 'https://reqres.in/api'
-  * def register = read("register.json")
-  * def new_user = read("new_user.json")
-  * def register_erro = read("register_erro.json")
-  * def login = read("login.json")
-  * def login_erro = read("login_erro.json")
 
 Scenario: LIST USERS
     Given path '/users'
