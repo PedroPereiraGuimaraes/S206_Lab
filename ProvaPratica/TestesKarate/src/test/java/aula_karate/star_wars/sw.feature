@@ -22,3 +22,21 @@ Scenario: Testando retorno bulbasaur e verificando o JSON.
     Then status 200
     And match response.name == "bulbasaur"
 
+Scenario: Testando entrada no JSON de habilidades do pokemon bulbasaur e testando a verificação de ID
+        Given url url_base
+        And path 'pokemon/bulbasaur'
+        When method get
+        Then status 200
+        And def habilidades = $.abilities[0].ability.url
+        And print habilidades
+        And url habilidades
+        When method get
+        And match response.id == 65
+        
+Scenario: Criando um usuário sem gênero
+        Given url url_base2 
+        And path '/users'  
+        And header Authorization = 'Bearer ' + token
+        And request {"name":"Tenali Ramakrishna", "email":"dawdawkikikd.ramakrishna@15ce.com", "status":"active"}
+        When method post
+        Then status 422
