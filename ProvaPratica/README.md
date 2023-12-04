@@ -1,4 +1,8 @@
 # 💉 Testes Automatizados Cypress
+***Alunos:***
+- Laura Pivoto Ambrósio
+- Francisco P. Guimarães
+- Pedro P. Guimarães
 
 ## 🛜 Site computer-database.gatling
 **Caso de teste 1: Testando busca de computador Apple MacBook Pro 15**
@@ -41,4 +45,36 @@ Para rodar o Mochawesome pelo terminal:
 
 ```
 /node_modules/.bin/cypress run --spec 'cypress/e2e/**/'
+```
+
+# 💉 Testes de API Karate
+
+## 🛜 API pokeapi.co
+**Caso de teste 1: Testando retorno de uma rota correta**
+  - Verifica se o status da requisição foi um sucesso.
+
+**Caso de teste 2 (Falha): Testando retorno de uma rota errada**
+  - Verifica se o status da requisição foi falha.
+
+**Caso de teste 3: Testando se o json de resposta está correto**
+  - Verifica o nome do pokemon retornado na rota.
+
+**Caso de teste 4: Entrando em uma rota retornada no json da resposta da rota**
+  - Faz uma requisição e entra em outra rota retornada, e por ultimo, verifica o valor do id.
+
+## 🛜 API gorest.co.in
+
+**Caso de teste 5 (FALHA): Criando um usuario com campos faltando**
+  - Verifica se o status retornado foi um erro.
+
+## 👨🏻‍💻 Executando o Mochawesome via terminal
+
+Para rodar o Karate pelo terminal:
+
+1. Verifique se todas as bibliotecas necessarias estão devidamente instaladas.
+2. Verifique se o maven está configurado corretamente.
+3. Execute o comando na pasta raiz do projeto.
+
+```
+mvn test -Dtest=apiTestsRunner
 ```
