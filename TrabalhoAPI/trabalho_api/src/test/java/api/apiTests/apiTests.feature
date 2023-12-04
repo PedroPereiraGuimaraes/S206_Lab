@@ -58,3 +58,19 @@ Scenario: Fazendo um registro com erro
     When method post
     Then status 400
 
+Scenario: Fazendo um login com sucesso
+    And path '/login'
+    And request {"email": "eve.holt@reqres.in", "password": "cityslicka"}
+    When method post
+    Then status 200
+
+Scenario: Fazendo um login com erro
+    And path '/login'
+    And request {"email": "eve.holt@reqres.in"}
+    When method post
+    Then status 400
+
+Scenario: Deletando um user
+    And path '/users/2'
+    When method delete
+    Then status 204
