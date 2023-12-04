@@ -1,4 +1,8 @@
 # 💉 Testes Automatizados Cypress
+***Alunos:***
+- Laura Pivoto Ambrósio
+- Francisco P. Guimarães
+- Pedro P. Guimarães
 
 ## 🛜 Site computer-database.gatling
 **Caso de teste 1: Testando busca de computador Apple MacBook Pro 15**
